@@ -44,6 +44,15 @@ namespace OpenMLTD.MiriTore.Database {
                     case ushort u16:
                         size = u16;
                         break;
+                    case short s when s >= 0:
+                        size = (ushort)s;
+                        break;
+                    case int i when i >= 0 && i <= ushort.MaxValue:
+                        size = (ushort)i;
+                        break;
+                    case int i when i > ushort.MaxValue:
+                        size = (uint)i;
+                        break;
                     default:
                         throw new InvalidCastException("Type mismatch at AssetInfo.Size field.");
                 }
