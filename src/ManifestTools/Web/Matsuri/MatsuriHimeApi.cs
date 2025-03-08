@@ -21,7 +21,7 @@ namespace OpenMLTD.ManifestTools.Web.Matsuri {
             return string.Format(urlTemplate, version.ToString());
         }
 
-        private const string BaseAddress = "https://api.matsurihi.me/mltd/v1";
+        private const string BaseAddress = "https://api.matsurihi.me/api/mltd/v2";
 
     }
 }

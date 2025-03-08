@@ -13,7 +13,7 @@ namespace OpenMLTD.ManifestTools.Web.Matsuri.Entities {
         public AppVersion App { get; set; }
 
         [JsonProperty]
-        public ResVersion Res { get; set; }
+        public ResVersion Asset { get; set; }
 
     }
 }

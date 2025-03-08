@@ -242,8 +242,8 @@ namespace OpenMLTD.ManifestTools.UI {
 
                 if (radResLatest.Checked) {
                     var latest = await Hime.GetLatestVersion();
-                    resourceVersion = latest.Res.Version;
-                    resourceAssetName = latest.Res.IndexName;
+                    resourceVersion = latest.Asset.Version;
+                    resourceAssetName = latest.Asset.IndexName;
                 } else {
                     resourceVersion = int.Parse(cboResVersion.Text);
                     ResVersion res;

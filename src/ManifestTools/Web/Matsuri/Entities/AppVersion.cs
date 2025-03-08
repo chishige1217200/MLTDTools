@@ -14,7 +14,7 @@ namespace OpenMLTD.ManifestTools.Web.Matsuri.Entities {
 
         // Format: 2020-05-10T12:00:00+09:00
         [JsonProperty]
-        public string UpdateTime { get; set; }
+        public string UpdateAt { get; set; }
 
         [JsonProperty]
         public int Revision { get; set; }

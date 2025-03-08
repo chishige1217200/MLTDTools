@@ -13,7 +13,7 @@ namespace OpenMLTD.ManifestTools.Web.Matsuri.Entities {
         public int Version { get; set; }
 
         [JsonProperty]
-        public string UpdateTime { get; set; }
+        public string UpdateAt { get; set; }
 
         [JsonProperty]
         public string IndexName { get; set; }
